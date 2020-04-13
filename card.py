@@ -8,14 +8,15 @@ class Card:
         return f"{self._colour:6} {self._value:3} of {self._element}"
 
     def __gt__(self, other):
-        if self._element == other.element():
-            return self._value > other.value()
+        # If the elements are the same compare the values.
+        if self.element() == other.element():
+            return self.value() > other.value()
+
         elements = {'FIRE': 'ICE', 'ICE': 'WATER', 'WATER': 'FIRE'}  # key beats value
         for element in elements:
-            if self._element == element and other.element() == elements.get(element):
+            if self.element() == element and other.element() == elements.get(element):
                 return True
-            else:
-                return False
+        return False
 
     def value(self):
         return self._value

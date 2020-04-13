@@ -2,7 +2,12 @@ from game import Game
 
 
 def main():
-    game = Game('Adam', 'Jacob')
+    print("Welcome to Cards Elemental!")
+    print("We need two players.")
+    p1 = input("Name a player: ").strip()
+    p2 = input("and another one: ").strip()
+
+    game = Game(p1, p2)
     game.play()
 
 

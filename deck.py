@@ -6,7 +6,7 @@ class Deck:
     def __init__(self):
         colours = ['blue', 'red', 'green', 'yellow']
         values = list(range(1, 11))
-        elements = ['FIRE', 'SNOW', 'WATER']
+        elements = ['FIRE', 'ICE', 'WATER']
         self.cards = [Card(element, colour, value) for value in values for element in elements for colour in colours]
 
     def __str__(self):

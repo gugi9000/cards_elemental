@@ -16,8 +16,8 @@ class Player:
     def wins(self):
         return '\n'.join([str(card) for card in self.won_cards])
 
-    def play(self):
-        return self.hand.pop()
+    def play(self, chosen_card):
+        return self.hand.pop(chosen_card)
 
     def winner(self):
         if len(self.won_cards) > 0:
