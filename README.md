@@ -1,6 +1,13 @@
 # Cards Elemental
+## A card game for two players.
+### Project
 
-### A card game for two players.
+We are building a base engine for the game with a reference implementation in text-mode.
+The idea is that anyone can built a client, like PyGame, web or such that communicates with the server. 
+
+Whether the server will be running JSON REST, GRPC or whatever has yet to be decided.
+
+### Rules
 
 - Each player draws 5 cards from the deck.
 
