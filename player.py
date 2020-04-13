@@ -1,4 +1,4 @@
-# from collections import Counter
+from collections import Counter
 
 
 class Player:
@@ -21,9 +21,15 @@ class Player:
 
     def winner(self):
         if len(self.won_cards) > 0:
-            colours = {card.colour() for card in self.won_cards}
+            colours = Counter()
+            for card in self.won_cards:
+                colours[str(card.element()+card.colour())] += 1
             elements = {card.element() for card in self.won_cards}
-            if len(colours) > 2 or len(elements) > 2:
+            if 3 in colours.values():
+                # Win if you have 3 colours from one element.
+                return True
+            if len(elements) > 2:
+                # Win of you have collected all 3 elements.
                 return True
         return False
 

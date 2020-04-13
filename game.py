@@ -24,6 +24,8 @@ class Game:
                 print(f"{self.players[0].name} wins the round!")
                 self.players[0].add_won_card(plays[0])
             else:
+                # TODO: A draw could result in the next winner gets to choose either card from
+                # TODO: from the draw pile
                 print('It was a draw! Both cards are discarded.')
 
             if len(self.deck.cards) > 1:
