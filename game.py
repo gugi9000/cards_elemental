@@ -39,6 +39,6 @@ class Game:
                     print(f"The winner is {player.name}")
                     winner = True
 
-            if not winner and len(self.deck.cards) == 0 and len(self.player[0].hand) == 0:
+            if not winner and len(self.deck.cards) == 0 and len(self.players[0].hand) == 0:
                 winner = True
                 print(f"There is no winner. What even is the purpose?")
