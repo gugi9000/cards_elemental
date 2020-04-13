@@ -15,8 +15,7 @@ The colours are `red`, `green`, `blue`, and `yellow`.
 ### A round 
 - In turn each player plays a card to see who wins.
 - The winner keeps their own card in their winnings pile.
-- First to obtain cards of 3 _different_ elements or 3 cards of the _same_ colour wins the game
-- The starting player is chosen at random (dice rolls/draw cards).
+- The starting player is chosen at random (dice rolls/draw cards). Following rounds are started by the last round winner.
 
 ### Winning a round
 A winner is determined by first the elements then the value (1-10)
@@ -29,4 +28,7 @@ If the element is the same, the higher value wins.
 
 -  if no winner is found the round is a draw, both cards are discarded and a new round is started
 
+### Winning the game
+
+- First to obtain cards of 3 _different_ elements or 3 cards of the _same_ colour in **one** element wins the game
 
